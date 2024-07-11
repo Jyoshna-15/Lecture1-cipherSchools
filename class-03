@@ -1,0 +1,409 @@
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        x.html
+        y.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   x.html
+        new file:   y.css
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   x.html
+        new file:   y.css
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    x.html
+        deleted:    y.css
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit ff5199273c97865559261c83ab027ed928d830b0 (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:34:52 2024 +0530
+
+    Added example.js and Home.html
+
+commit 5cd0a24f350a046d35665a9f884a6f2b7722ac9c
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:30:02 2024 +0530
+
+    Added css file
+
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        homePage.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   homePage.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   homePage.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    homePage.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit ff5199273c97865559261c83ab027ed928d830b0 (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:34:52 2024 +0530
+
+    Added example.js and Home.html
+
+commit 5cd0a24f350a046d35665a9f884a6f2b7722ac9c
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:30:02 2024 +0530
+
+    Added css file
+
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout b760182
+Note: switching to 'b760182'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b760182 Second Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((b760182...))
+$ git status
+HEAD detached at b760182
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((b760182...))
+$ git checkout master
+Previous HEAD position was b760182 Second Commit
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout 5bcc26e
+Note: switching to '5bcc26e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5bcc26e Third Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git log
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff (HEAD)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git log --oneline
+5bcc26e (HEAD) Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git checkout master
+Previous HEAD position was 5bcc26e Third Commit
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added style2.css"
+[master 93e27f7] Added style2.css
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style2.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+93e27f7 (HEAD -> master) Added style2.css
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout ^C
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout 5bcc26e
+Note: switching to '5bcc26e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5bcc26e Third Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git log --oneline
+5bcc26e (HEAD) Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git status
+HEAD detached at 5bcc26e
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style3.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git log
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff (HEAD)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5bcc26e...))
+$ git commit -m "added style3.css"
+[detached HEAD 044114e] added style3.css
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style3.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((044114e...))
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((044114e...))
+$ git log --oneline
+044114e (HEAD) added style3.css
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((044114e...))
+$ git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  044114e added style3.css
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 044114e
+
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+93e27f7 (HEAD -> master) Added style2.css
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$
