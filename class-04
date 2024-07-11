@@ -1,0 +1,391 @@
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~ (master)
+$ cd desktop
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop (master)
+$ cd git
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+93e27f7 (HEAD -> master) Added style2.css
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ff51992 (HEAD -> master) Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git revert 5cd0a24
+[master c5fbd04] Revert "Added css file"
+ 2 files changed, 1 insertion(+), 4 deletions(-)
+ delete mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+c5fbd04 (HEAD -> master) Revert "Added css file"
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ gid add .
+bash: gid: command not found
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added sample.js"
+[master 2f52cc1] Added sample.js
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+2f52cc1 (HEAD -> master) Added sample.js
+c5fbd04 Revert "Added css file"
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git revert ff51992
+[master be63c5d] Revert "Added example.js and Home.html"
+ 2 files changed, 12 deletions(-)
+ delete mode 100644 Home.html
+ delete mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+be63c5d (HEAD -> master) Revert "Added example.js and Home.html"
+2f52cc1 Added sample.js
+c5fbd04 Revert "Added css file"
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout 5cd0a24
+Note: switching to '5cd0a24'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5cd0a24 Added css file
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git ((5cd0a24...))
+$ git checkout master
+Previous HEAD position was 5cd0a24 Added css file
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+be63c5d (HEAD -> master) Revert "Added example.js and Home.html"
+2f52cc1 Added sample.js
+c5fbd04 Revert "Added css file"
+ff51992 Added example.js and Home.html
+5cd0a24 Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git reset b760182
+Unstaged changes after reset:
+M       index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git sttaus
+git: 'sttaus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   sample.js
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "chicken out while reseting"
+[master f184e8c] chicken out while reseting
+ 2 files changed, 1 insertion(+)
+ create mode 100644 sample.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+f184e8c (HEAD -> master) chicken out while reseting
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added style.css"
+[master ca5bcf9] Added style.css
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+ca5bcf9 (HEAD -> master) Added style.css
+f184e8c chicken out while reseting
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added example.js"
+[master d14dfea] Added example.js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+d14dfea (HEAD -> master) Added example.js
+ca5bcf9 Added style.css
+f184e8c chicken out while reseting
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git reset b760182
+Unstaged changes after reset:
+M       index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.js
+        sample.js
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Again backed off"
+[master 489004a] Again backed off
+ 4 files changed, 5 insertions(+)
+ create mode 100644 example.js
+ create mode 100644 sample.js
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+489004a (HEAD -> master) Again backed off
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Modified index"
+[master a33995a] Modified index
+ 1 file changed, 1 insertion(+)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+a33995a (HEAD -> master) Modified index
+489004a Again backed off
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git reset --hard f6d62f5
+HEAD is now at f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+f6d62f5 (HEAD -> master) Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+f6d62f5 (HEAD -> master) Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git branch dev-1
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git branch
+  dev-1
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git chcekout dev-1
+git: 'chcekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git branch
+* dev-1
+  master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git branch
+  dev-1
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout -b dev-2
+Switched to a new branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-2)
+$ git branch
+  dev-1
+* dev-2
+  master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-2)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git commit -m "Added example.css"
+[dev-1 9fdafb7] Added example.css
+ 1 file changed, 3 insertions(+)
+ create mode 100644 example.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git status
+On branch dev-1
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git log --oneline
+9fdafb7 (HEAD -> dev-1) Added example.css
+f6d62f5 (master, dev-2) Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (dev-1)
+$
