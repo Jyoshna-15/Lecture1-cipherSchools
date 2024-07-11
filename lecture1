@@ -1,0 +1,16 @@
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~ (master)
+$ cd desktop
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop (master)
+$ cd git
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git init
+Initialized empty Git repository in C:/Users/jyoshna/Desktop/git/.git/
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ ^C
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$
+
