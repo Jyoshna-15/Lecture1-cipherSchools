@@ -1,0 +1,335 @@
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$  git add index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$  git add index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) f6d62f5] Initial Commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3 (HEAD -> master)
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git --global
+unknown option: --global
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git config --global user.name "Jyoshna"
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git config --global user.mail "jyoshna.d.n@gmail.com"
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git config --global user.mail
+jyoshna.d.n@gmail.com
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git config --global user.name
+Jyoshna
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ gid add index.html
+bash: gid: command not found
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Second Commit"
+[master b760182] Second Commit
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit b7601828b6873c2aa87420a004a66b8a848294ce (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Third Commit"
+[master 5bcc26e] Third Commit
+ 1 file changed, 1 insertion(+)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add index.html style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   style.css
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added css file "
+[master 5cd0a24] Added css file
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit 5cd0a24f350a046d35665a9f884a6f2b7722ac9c (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:30:02 2024 +0530
+
+    Added css file
+
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log --oneline
+5cd0a24 (HEAD -> master) Added css file
+5bcc26e Third Commit
+b760182 Second Commit
+f6d62f5 Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Home.html
+        example.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Home.html
+        new file:   example.js
+
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git commit -m "Added example.js and Home.html "
+[master ff51992] Added example.js and Home.html
+ 2 files changed, 12 insertions(+)
+ create mode 100644 Home.html
+ create mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$ git log
+commit ff5199273c97865559261c83ab027ed928d830b0 (HEAD -> master)
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:34:52 2024 +0530
+
+    Added example.js and Home.html
+
+commit 5cd0a24f350a046d35665a9f884a6f2b7722ac9c
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:30:02 2024 +0530
+
+    Added css file
+
+commit 5bcc26ec4ce48d60beb5748fc72c331ccad631ff
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:26:49 2024 +0530
+
+    Third Commit
+
+commit b7601828b6873c2aa87420a004a66b8a848294ce
+Author: Jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 14:24:05 2024 +0530
+
+    Second Commit
+
+commit f6d62f5df380d2c0b57334e1bc60ff30c98e48d3
+Author: jyoshna <jyoshna.d.n@gmail.com>
+Date:   Thu Jul 11 13:41:27 2024 +0530
+
+    Initial Commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/git (master)
+$
