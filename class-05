@@ -1,0 +1,411 @@
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~ (master)
+$ cd desktop
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop (master)
+$ cd Beginner-MERN
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN (master)
+$ cd git
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git init
+Initialized empty Git repository in C:/Users/jyoshna/Desktop/Beginner-MERN/Git/.git/
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 485687f] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkou -b dev-1
+git: 'checkou' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout -b dev-1
+Switched to a new branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git branch
+* dev-1
+  master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+  dev-1
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout -b dev-2
+Switched to a new branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git branch
+  dev-1
+* dev-2
+  master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout -b dev-1
+fatal: a branch named 'dev-1' already exists
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git status
+On branch dev-1
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git status
+On branch dev-1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git commit -m "Added css"
+[dev-1 b1f2d7a] Added css
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git checkout dev-2
+Switched to branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git branch
+  dev-1
+* dev-2
+  master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git commit -m "Added js"
+[dev-2 53f6f60] Added js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git log --oneline
+53f6f60 (HEAD -> dev-2) Added js
+485687f (master) Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git log --oneline
+485687f (HEAD -> master) Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git log --oneline
+b1f2d7a (HEAD -> dev-1) Added css
+485687f (master) Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git merge dev-1
+Updating 485687f..b1f2d7a
+Fast-forward
+ style.css | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+  dev-1
+  dev-2
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git log --oneline
+b1f2d7a (HEAD -> master, dev-1) Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout dev-2
+Switched to branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git merge dev-2
+Merge made by the 'ort' strategy.
+ example.js | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+  dev-1
+  dev-2
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git log --oneline
+7807f4b (HEAD -> master) Merge branch 'dev-2'
+53f6f60 (dev-2) Added js
+b1f2d7a (dev-1) Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git merge master
+Updating b1f2d7a..7807f4b
+Fast-forward
+ example.js | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.js
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git log --oneline
+7807f4b (HEAD -> dev-1, master) Merge branch 'dev-2'
+53f6f60 (dev-2) Added js
+b1f2d7a Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git checkout dev-2
+Switched to branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git log --oneline
+53f6f60 (HEAD -> dev-2) Added js
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git merge master
+Updating 53f6f60..7807f4b
+Fast-forward
+ style.css | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git log --oneline
+7807f4b (HEAD -> dev-2, master, dev-1) Merge branch 'dev-2'
+53f6f60 Added js
+b1f2d7a Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git commit -m "Modified html"
+[dev-2 f350668] Modified html
+ 1 file changed, 11 insertions(+)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git status
+On branch dev-2
+nothing to commit, working tree clean
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git log --online
+fatal: unrecognized argument: --online
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git log --oneline
+f350668 (HEAD -> dev-2) Modified html
+7807f4b (master, dev-1) Merge branch 'dev-2'
+53f6f60 Added js
+b1f2d7a Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout dev-1
+Switched to branch 'dev-1'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git status
+On branch dev-1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git commit -m "Added h1"
+[dev-1 2d2d411] Added h1
+ 1 file changed, 11 insertions(+)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-1)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git merge dev-2
+Updating 7807f4b..f350668
+Fast-forward
+ index.html | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git merge dev-1
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master|MERGING)
+$ git commit
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       index.html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master|MERGING)
+$ git add .
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master|MERGING)
+$ git commit
+[master 154f096] Resolved conflict on html
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git log --oneline
+154f096 (HEAD -> master) Resolved conflict on html
+2d2d411 (dev-1) Added h1
+f350668 (dev-2) Modified html
+7807f4b Merge branch 'dev-2'
+53f6f60 Added js
+b1f2d7a Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+  dev-1
+  dev-2
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch -d dev-1
+Deleted branch dev-1 (was 2d2d411).
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+  dev-2
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git checkout dev-2
+Switched to branch 'dev-2'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git branch -d dev-2
+error: cannot delete branch 'dev-2' used by worktree at 'C:/Users/jyoshna/Desktop/Beginner-MERN/Git'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (dev-2)
+$ git checkout master
+Switched to branch 'master'
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch -d dev-2
+Deleted branch dev-2 (was f350668).
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git branch
+* master
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$ git log --oneline
+154f096 (HEAD -> master) Resolved conflict on html
+2d2d411 Added h1
+f350668 Modified html
+7807f4b Merge branch 'dev-2'
+53f6f60 Added js
+b1f2d7a Added css
+485687f Initial commit
+
+jyoshna@LAPTOP-31JHJ807 MINGW64 ~/desktop/Beginner-MERN/git (master)
+$
