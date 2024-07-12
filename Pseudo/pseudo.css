@@ -1,0 +1,102 @@
+/* psuedo */
+/* h2:hover{
+    color: red;
+} */
+/* #header:hover{
+    background: lightblue;
+    color: peru;
+    padding: 100px ;
+}
+a:link{
+    color: purple;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: black;
+} */
+
+
+/* position property
+static
+relative
+fixed
+absoulte
+sticky
+ */
+ /* header{
+    position: static;
+    border: 2px dotted red;
+ } */
+
+
+ /* header{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    border: 2px dotted red;
+    
+ } */
+  /* h4{
+    position:fixed;
+    bottom: 20px;
+    background: blue;
+    color: white;
+
+  }
+
+  header{
+    position: fixed;
+    top: 10px;
+    left: 250px;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    width: 500px;
+    
+    
+ } */
+
+ /* #header{
+    position: relative;
+    border: 2px dashed red;
+    width: 400px;
+    height: 200px ;
+
+ }
+ #header h2{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border: 1px dashed green;
+    top: 50px;
+    right: 0px;
+    left: 100px;
+ } */
+
+ #nav{
+    background-color: lightgoldenrodyellow;
+    margin: 10px auto;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+ }
+ #nav ul{
+    margin: 10px auto;
+
+ }
+ #nav ul li{
+display: inline-block;
+font-weight: bold;
+
+
+ }
+ #para{
+    position: sticky;
+    top: 250px;
+    background: blue;
+    color: white;
+
+
+ }
