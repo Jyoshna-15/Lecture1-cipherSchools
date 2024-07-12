@@ -1,0 +1,69 @@
+a{
+    text-decoration: none;
+    color: aqua;
+}
+/* 100 */
+#header{
+    background-color:skyblue;
+
+}
+/* 1 */
+header{
+    background-color: lightcoral;
+}
+/* spacidicity order
+id=100;
+class=10;
+tags=1 */
+#para1{
+    font-weight:bolder;
+}
+.para{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    color: blue;
+}
+p{
+    text-decoration: underline;
+    color: royalblue;
+}
+/* 10 */
+.welocme{
+    background-color: lightgreen;
+}
+/* 110 */
+#header.welocme{
+    background-color: darkmagenta;
+}
+/* 11 */
+header#header.welcome{
+    background-color: darkorange;
+}
+/* parent child in css */
+
+header{
+    color:green;
+}
+p{
+    color:red;
+}
+
+/* Box model */
+#header{
+    margin:10px 5px 10px 5px;
+    border: 3px dotted cyan;
+    padding: 5px;
+    display: inline;
+
+}
+
+.box{
+    margin:10px auto;
+    border:2px dashed black ;
+    padding: 5px;
+    width:200px ;
+    height:200px ;
+    overflow: scroll;
+    display: inline-block;
+   
+}
